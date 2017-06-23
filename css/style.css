@@ -1,0 +1,85 @@
+
+body{
+	background-color:#c8c8c8;
+}
+
+a, a:visited, a:hover{
+	color:black;	
+}
+
+.navbar-brand{
+	font-size:30px;
+}
+
+.active, .active:hover{
+	text-decoration:underline;
+}
+
+.nav>li>a{
+	padding: 10px 5px;
+}
+
+@media (max-width: 999px) and (min-width: 768px){
+	.nav>li>a{
+		padding: 10px 1px;
+	}
+	.navbar-brand{
+		padding-right:5px;	
+	}
+}
+
+.labsearch{
+	margin:0px 5px;
+}
+
+input[type="checkbox"] {
+transform:scale(1.3, 1.3);
+  height: 12px;
+  vertical-align: bottom;
+}
+label{
+	font-weight:normal;
+}
+
+midbrand h3{
+	font-size:22px;
+	margin-top:10px;
+}
+
+.panel-heading{
+	height:200px;
+	background-color:#777;	
+}
+.midbrand{
+	background-color:white;
+	padding:30px;
+	padding-top:10px;
+}
+
+.midbrand p{
+	font-size:14px;
+	padding-top:15px;
+}
+
+.label{
+    font-size: 14px;
+    border-radius: 15px;
+	font-weight:normal;
+	padding: .4em .6em .4em;
+}
+
+.boxmeat, .boxfruit, .boxvegetable{
+	margin: 15px 0px;
+}
+
+.boxfruit .midbrand .fa-color{
+	color: #f0ad4e;
+}
+
+.boxvegetable .midbrand .fa-color{
+	color: #5cb85c;
+}
+
+.boxmeat .midbrand .fa-color{
+	color: #d9534f;
+}
