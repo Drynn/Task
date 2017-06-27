@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Test</title>
+	
+	<!-- bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <!-- web -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+	<!-- bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- angular -->
+	<script src="js/angular.min.js"></script>
+</head>
+<body ng-app="">
+	<header class="navbar" id="header-navbar">
+        <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars icon-custom"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html" title="Home">
+                    	Brandname
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="" class="dropdown-toggle" title="Menu Item 1">
+                                Menu Item 1</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 1">
+                                Menu Item 2</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 2">
+                                Menu Item 2</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 3">
+                                Menu Item 3</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 4">
+                                Menu Item 4</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 5">
+                                Menu Item 5</a>
+                        </li>
+                        <li>
+                            <a href="" title="Menu Item 6">
+                                Menu Item 6</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</header>
+	<div id="page-wrapper" class="container">
+		<div id="content-wrapper">
+			<div class="row">
+                <div class="col-lg-12"  ng-init="cbox = {ngfruit: true, ngvegetable: true, ngmeat: true}">
+                	<span>Filter:</span>
+                    <span class="labsearch label label-warning"><label><input type="checkbox" id="fruit" ng-model="cbox.ngfruit"
+                    
+                    > Fruit</label></span>
+                    <span class="labsearch label label-success"><label><input type="checkbox" id="vegetable" ng-model="cbox.ngvegetable"> Vegetable</label></span>
+                    <span class="labsearch label label-danger"><label><input type="checkbox" id="meat" ng-model="cbox.ngmeat"> Meat</label></span>
+                </div>
+			</div>
+            <div class="row">
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxfruit" ng-if="cbox.ngfruit">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-warning pull-right">Fruit</span>
+                        	<h3>Apple</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxvegetable" ng-if="cbox.ngvegetable">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-success pull-right">Gemüse</span>
+                        	<h3>Aubergine</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxfruit" ng-if="cbox.ngfruit">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-warning pull-right">Fruit</span>
+                        	<h3>Banana</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxvegetable" ng-if="cbox.ngvegetable">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-success pull-right">Vegetable</span>
+                        	<h3>Broccoli</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+                
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxmeat" ng-if="cbox.ngmeat">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-danger pull-right">Meat</span>
+                        	<h3>Chicken</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxfruit" ng-if="cbox.ngfruit">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-warning pull-right">Fruit</span>
+                        	<h3>Orange</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxmeat" ng-if="cbox.ngmeat">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-danger pull-right">Meat</span>
+                        	<h3>Beef</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            	<div class="col-lg-3 col-md-4 col-sm-6 boxvegetable" ng-if="cbox.ngvegetable">
+                	<div class="panel-heading">
+                    </div>
+                    <div class="midbrand">
+                    	<div>
+                            <span class="label label-success pull-right">Vegetable</span>
+                        	<h3>Zucchini</h3>
+                       	</div>
+                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p><i class="fa fa-chevron-right fa-color"></i> More info</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
